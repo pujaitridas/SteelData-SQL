@@ -144,6 +144,7 @@ order by 2 desc
 limit 1;
 
 
+
 #10. What is the average age of customers who made orders in the 'vitamins' product category?
 select avg(age) as `Average Age`
 from customers as c inner join orders as o on c.customer_id=o.customer_id inner join
