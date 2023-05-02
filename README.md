@@ -1,2 +1,2 @@
 # SteelData-SQL
-This repository contains the SQL files for SteelData Challenges.
+This repository contains the solved questions of SteelData SQL Challenges.
