@@ -156,6 +156,7 @@ limit 1;
 #9. Which customer has the highest total balance across all of their accounts, including savings and checking accounts?
 select CustomerID, concat(FirstName," ",LastName) as FullName, sum(Balance) as `Total Balance`
 from Customers inner join Accounts using (CustomerID)
+where AccountType in ('Savings','Checking')
 group by CustomerID
 order by 3 desc
 limit 1;
